@@ -1,14 +1,14 @@
-## ZKDID Prototype Application
+# ZKDID Prototype Application: Version 1 Alpha
 
-This application allows a user to input a number and compute the square and a proof of computation
+This application showcases an initial proof of concept (PoC) for the Zero Knowledge Decentralised DNS (dDNS) proof of personhood protocol utilising .zkdid domain as the root of trust. Here’s a concise overview of what this this code demonstrartes:
 
-These results are published to a users DWN (Decentralized Web Node) and the resulting DWN Record ID along with the proof + square are submitted for registering a zkdid domain on Polygon Mumbai
+- **Input and Computation:** Users enter a number to compute its square along with a proof of computation.
+- **DWN Publishing:** Results and proofs are published to the user's Decentralized Web Node (DWN). Together with the DWN Record ID, these are used for registering a .zkdid domain on the Polygon Mumbai test network.
+- **Verification and NFT Minting:** The proof and computed square undergo verification through a smart contract. If validated, an NFT symbolising domain ownership is minted.
+- **Domain Resolution:** The registered .zkdid domain, generated from a SHA-256 hash of the proof and square, confirms the owner's knowledge of the original number by resolving to the stored proof.
 
-The proof + square are submitted to a verifier contract and if successful an NFT is minted to represent ownership of the domain 
+This version 1 alpha is a preliminary demonstration, focusing on the essential mechanics of the .zkdid protocol to establish a foundation for further development and refinement.
 
-The domain string is the sha256 hash of the stringified proof + square result
-
-This domain resolves to the stored proof and the verification of the proof can attest to the owner knowing the original input number (the root of the stored square)
 
 ----
 
